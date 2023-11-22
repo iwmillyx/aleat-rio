@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+// uma função que soma 2 números e printa na main se é par ou ímpar//
+
+int soma(int num1, int num2){ //função que soma 2 números
+    
+    int adicao = num1 + num2;
+    
+    return adicao;
+}
+
+void ana(int anaBaiana){ //função que vai dizer se é par ou ímpar
+    
+    if( anaBaiana % 2 == 0){
+        printf("é par");
+    } else {
+        printf("é ímpar");
+    }
+    
+}
+
+int main(){
+    
+    int a = 10, b = 30, x = soma(a,b);
+    
+    ana(x);
+    
+    return 0;
+}
