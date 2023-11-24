@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+int soma(int num1, int num2){
+    
+    int adição = num1 + num2;
+    
+    return adição;
+}
+
+int main(){
+    
+    int x, y;
+    
+    printf("Digite um número: ");
+    scanf("%i", &x);
+    printf("Digite outro número: ");
+    scanf("%i", &y);
+    
+    int resultado = soma(x, y);
+    
+    printf("A soma é: %i", resultado);
+    
+    return 0;
+}
