@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int converteCelsiusParaFahrenheit(int g){
+    
+    int fahrenheit = g * 9/5 + 32;
+    
+    return fahrenheit;
+}
+
+int main(){
+    
+    int x;
+    
+    printf("Digite uma temperatura: ");
+    scanf("%i", &x);
+    
+    int converter = converteCelsiusParaFahrenheit(x);
+    
+    printf("A conversão para Fahrenheit é: %i", converter);
+    
+    return 0;
+    
+}
