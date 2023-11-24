@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+int multiplo(int a, int b){
+    
+    if(a % b == 0){
+        return 1; //ele é múltiplo
+    } else {
+        return 0; // ele não é múltiplo
+    }
+}
+
+int main(){
+    
+    int x, y;
+    
+    printf("Digite um número: ");
+    scanf("%i", &x);
+    
+    printf("Digite outro número: ");
+    scanf("%i", &y);
+    
+    int resultado = multiplo(x, y);
+    
+    printf("O resultado é: %i", resultado);
+    
+    return 0;
+}
