@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+struct produto {
+    
+    int codigo_produto;
+    float preco;
+    
+};
+
+int main(){
+    
+    struct produto p;
+    
+    printf("Digite o código do produto: ");
+    scanf("%i", &p.codigo_produto);
+    
+    printf("Digite o preço do produto: ");
+    scanf("%f", &p.preco);
+    
+    printf("\n==========Informações do Produto==========\n");
+    printf("\nCódigo: %i\n", p.codigo_produto);
+    printf("Preço: %.2f\n", p.preco);
+    
+    return 0;
+    
+}
