@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+//Definindo a estrutura para armazenar horas, minutos e segundos
+typedef struct {
+    int horas;
+    int minutos;
+    int segundos;
+} Tempo;
+
+int main(){
+    
+    Tempo hora_atual; //Declarando uma variável do tipo Tempo
+    
+    printf("Informe as horas: ");
+    scanf("%d", &hora_atual.horas);
+    
+    printf("Informe os minutos: ");
+    scanf("%d", &hora_atual.minutos);
+    
+    printf("Informe os segundos: ");
+    scanf("%d", &hora_atual.segundos);
+    
+    printf("São %d:%d:%.2d", hora_atual.horas, hora_atual.minutos, hora_atual.segundos);
+    
+    return 0;
+}
