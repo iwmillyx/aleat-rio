@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+struct Data {
+    
+    int dia;
+    int mes;
+    int ano;
+    
+};
+
+int main(){
+    
+    struct Data registro;
+    
+    printf("Digite dia, mes e ano separados por espaço: ");
+    scanf("%d %d %d", &registro.dia, &registro.mes, &registro.ano);
+    
+    printf("\n==========INFORMAÇÕES==========\n");
+    printf("\nA data escolhida foi: %02d/%02d/%d", registro.dia, registro.mes, registro.ano);
+    
+    return 0;
+}
