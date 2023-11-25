@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+struct Ponto {
+    
+    int x;
+    int y;
+    
+};
+
+int main(){
+    
+    struct Ponto plano, cartesiano;
+    
+    printf("Digite as coordenadas x e y para o 1° ponto: ");
+    scanf("%d %d", &plano.x, &cartesiano.y);
+    
+    printf("Digite as coordenadas x e y para o 2° ponto: ");
+    scanf("%d %d", &cartesiano.x, &plano.y);
+    
+    printf("\nCoordenadas do 1° ponto: x = %d, y = %d\n", plano.x, cartesiano.y);
+    printf("Coordenadas do 2° ponto: x = %d, y = %d\n", cartesiano.x, plano.y);
+    
+    return 0;
+}
