@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+struct contato {
+    
+    char nome[30];
+    int numero_tel;
+};
+
+int main(){
+    
+    struct contato x;
+    
+    printf("Digite o nome e o telefone: ");
+    scanf("%s %d", x.nome, &x.numero_tel);
+    
+    printf("\nNome: %s || Telefone: %d", x.nome, x.numero_tel);
+    
+    return 0;
+}
