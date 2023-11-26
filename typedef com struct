@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+typedef struct {
+    char nome[50];
+    int idade;
+} Aluno;
+
+int main(){
+    Aluno aluno1;
+    
+    printf("Me fale seu nome: ");
+    scanf("%s", aluno1.nome); //lembrar que um array não precisa do '&'
+    
+    printf("Me diga sua idade: ");
+    scanf("%d", &aluno1.idade);
+    
+    printf("\nSeu nome é %s e vc tem %d anos", aluno1.nome, aluno1.idade);
+    
+    return 0;
+}
