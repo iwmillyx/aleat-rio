@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+int main(){
+    
+    int vet[5] = {50, 40, 30, 20, 10};
+    int maior, menor;
+    
+    maior = menor = vet[0]; 
+    
+    for(int i = 0; i < 5; i++){
+        
+        if(vet[i] > maior){
+            maior = vet[i];
+            
+        }else if(vet[i < menor]){
+            menor = vet[i];
+        }
+    }
+    
+    printf("\nMaior: %d || Menor: %d", maior, menor);
+    
+    return 0;
+}
+    
