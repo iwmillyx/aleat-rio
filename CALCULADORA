@@ -6,7 +6,7 @@ int main() {
     char opcao;
     
     do {
-        printf("========== BEM-VINDA A CALCULADORA DA EMILLY ==========\n");
+        printf("========== BEM-VINDA A CALCULADORA ==========\n");
         printf(" [1] - Somar\n");
         printf(" [2] - Diminuir\n");
         printf(" [3] - Multiplicação\n");
